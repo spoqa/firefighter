@@ -14,8 +14,6 @@
 import os
 import sys
 
-from firefighter import __version__
-
 sys.path.insert(0, os.path.join(os.path.dirname(__file__), '..'))
 sys.path.insert(0, os.path.join(os.path.dirname(__file__)))
 
@@ -27,7 +25,7 @@ copyright = '2018, Kang Hyojun'
 author = 'Kang Hyojun'
 
 # The short X.Y version
-version = '.'.join(__version__.split('.')[:2])
+version = '0.1'
 # The full version, including alpha/beta/rc tags
 release = '0.1.0'
 
