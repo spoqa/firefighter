@@ -4,6 +4,6 @@ Changelog
 0.1.0
 =====
 
-To be released.
+Released on Aug 23th 2018
 
 - Added ``FirehoseHandler``.
