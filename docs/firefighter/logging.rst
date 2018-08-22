@@ -1,0 +1,3 @@
+
+.. automodule:: firefighter.logging
+   :members:
