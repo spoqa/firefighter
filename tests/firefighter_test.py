@@ -20,7 +20,7 @@ def test_firehose_handler_emit(caplog, fx_make_handler):
         if count is not None:
             setattr(mockreturn, 'called', count + 1)
         assert len(messages) == 1
-        assert messages[0] == 'foobar'
+        assert messages[0] == b'foobar'
         assert delivery_stream_name == 'foo'
 
     setattr(mockreturn, 'called', 0)
