@@ -25,3 +25,9 @@ script:
     [[ "$TRAVIS_COMMIT_RANGE" = "" ]] || \
     [[ "$(git diff --name-only "$TRAVIS_COMMIT_RANGE" | grep CHANGES\.md)" != "" ]]
   fi
+deploy:
+  provider: pypi
+  user: "$PYPI_USER_NAME"
+  password: "$PYPI_USER_PASSWORD"
+  on:
+    tags: true
