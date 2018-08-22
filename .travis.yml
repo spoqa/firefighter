@@ -20,10 +20,10 @@ script:
      | grep '\[changelog skip\]' > /dev/null; then
     echo "Skip changelog checker..."
   elif [[ "$TRAVIS_TAG" != "" ]]; then
-    ! grep -i "to be released" CHANGES.md
+    ! grep -i "to be released" CHANGES.rst
   else
     [[ "$TRAVIS_COMMIT_RANGE" = "" ]] || \
-    [[ "$(git diff --name-only "$TRAVIS_COMMIT_RANGE" | grep CHANGES\.md)" != "" ]]
+    [[ "$(git diff --name-only "$TRAVIS_COMMIT_RANGE" | grep CHANGES\.rst)" != "" ]]
   fi
 deploy:
   provider: pypi
