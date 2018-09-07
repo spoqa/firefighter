@@ -6,6 +6,8 @@ Changelog
 
 To be released
 
+- Fixed the bug caused by doubly encoded record.
+
 
 0.1.0
 =====

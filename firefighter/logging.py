@@ -17,7 +17,6 @@
 from __future__ import (absolute_import, division, print_function,
                         unicode_literals)
 
-import base64
 import logging
 import threading
 import time
@@ -108,7 +107,7 @@ class FirehoseHandler(logging.Handler):
         response = None
         kwargs = {
             'DeliveryStreamName': delivery_stream_name,
-            'Records': [{'Data': base64.b64encode(data)} for data in batch]
+            'Records': [{'Data': data} for data in batch]
         }
         for retry in range(max_retries):
             try:
