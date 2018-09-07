@@ -108,7 +108,7 @@ class FirehoseHandler(logging.Handler):
         response = None
         kwargs = {
             'DeliveryStreamName': delivery_stream_name,
-            'Records': [{'Data': base64.b64encode(data)} for data in batch]
+            'Records': [{'Data': data} for data in batch]
         }
         for retry in range(max_retries):
             try:
