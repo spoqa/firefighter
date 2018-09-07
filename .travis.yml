@@ -29,5 +29,6 @@ deploy:
   provider: pypi
   user: "$PYPI_USER_NAME"
   password: "$PYPI_USER_PASSWORD"
+  distributions: "sdist bdist_wheel"
   on:
     tags: true
