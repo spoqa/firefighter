@@ -4,7 +4,7 @@ Changelog
 0.1.1
 =====
 
-To be released
+Released on Sep 07th 2018
 
 - Fixed the bug caused by doubly encoded record.
 
