@@ -34,7 +34,7 @@ KB = 1024
 
 class FirehoseWarning(Warning):
     """Firehose warning class. Every warning raised on
-    :class:`FirehoseHanlder` should use this class.
+    :class:`FirehoseHandler` should use this class.
 
     """
     pass
